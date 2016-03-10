@@ -10,7 +10,7 @@ RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php -y \
 && apt-get update \
 && apt-get install -y \
 nginx \
-php7.0 php7.0-fpm
+php7.0 php7.0-fpm php7.0-mysql
 
 # cp/chown app
 RUN rm -Rf /var/www
